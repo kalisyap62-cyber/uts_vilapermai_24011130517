@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Vila Permai - Puncak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header>
+        <div class="container header-content">
+            <h1>Vila Permai Puncak</h1>
+            <p>Keluarga Nyaman, Liburan Tenang</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#daftar-vila">Daftar Vila</a></li>
+                <li><a href="#pemesanan">Form Pesan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="beranda" class="intro-section">
+            <h2>Selamat Datang di Vila Permai</h2>
+            <p>Nikmati suasana sejuk pegunungan Puncak bersama keluarga tercinta. Pilih unit vila terbaik kami dan lakukan pemesanan dengan mudah secara online.</p>
+        </section>
+
+        <section id="daftar-vila">
+            <h2>Pilihan Unit Vila</h2>
+            <div class="search-box">
+                <input type="text" id="inputPencarian" placeholder="Cari nama vila atau fasilitas...">
+            </div>
+            <div id="containerVila" class="grid-vila"></div>
+        </section>
+
+        <section id="pemesanan" class="form-section">
+            <h2>Formulir Pemesanan Vila</h2>
+            <form id="formPemesanan">
+                <div class="form-group">
+                    <label for="namaTamu">Nama Lengkap Tamu:</label>
+                    <input type="text" id="namaTamu" placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label for="pilihVila">Pilih Unit Vila:</label>
+                    <select id="pilihVila">
+                        
+                    </select>
+                </div>
+
+                <div class="row-group">
+                    <div class="form-group">
+                        <label for="checkIn">Tanggal Check-in:</label>
+                        <input type="date" id="checkIn">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOut">Tanggal Check-out:</label>
+                        <input type="date" id="checkOut">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlahTamu">Jumlah Tamu (1 - 10 orang):</label>
+                    <input type="number" id="jumlahTamu" min="1" max="10" value="1">
+                </div>
+
+                <button type="submit" class="btn-pesan">Cek Keterangan & Pesan Sekarang</button>
+            </form>
+        </section>
+
+        <section id="hasilPemesanan" class="result-section">
+            <h3>Ringkasan Pemesanan</h3>
+            <div id="ringkasanKonten">
+                <p class="placeholder-text">Belum ada pesanan yang dibuat. Silakan isi formulir di atas.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="kontak">
+        <div class="container footer-content">
+            <p>&copy; 2026 Vila Permai. Dikelola oleh Pak Hendra.</p>
+            <p>Kontak Pemilik: <strong>0812-3456-7890</strong> (WhatsApp)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
