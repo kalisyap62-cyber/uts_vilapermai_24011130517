@@ -22,4 +22,4 @@ Daftar Fitur Utama:
 - Desain Responsif: Tampilan menyesuaikan perangkat seluler, tablet, maupun laptop.
 
 Tangkapan Layar Halaman Web:
-![Tampilan Web Vila Permai](screenshot-web.png)
+![Tampilan Web Vila Permai](screenshot.png)
